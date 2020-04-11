@@ -1634,6 +1634,11 @@ PrefabInstance:
       propertyPath: scorePerBlock
       value: 85
       objectReference: {fileID: 0}
+    - target: {fileID: 8760717217366135056, guid: 5cabac37801203a41aa828f9fd4a0889,
+        type: 3}
+      propertyPath: autoPlayEnabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9103004982885619304, guid: 5cabac37801203a41aa828f9fd4a0889,
         type: 3}
       propertyPath: m_textInfo.characterCount

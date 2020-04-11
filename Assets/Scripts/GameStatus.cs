@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 
 public class GameStatus : MonoBehaviour {
+    [SerializeField] bool autoPlayEnabled = false;
     [SerializeField] int scorePerBlock = 75;
     [SerializeField] int gameScore = 0;
     [SerializeField] TextMeshProUGUI resultText;
@@ -38,5 +39,9 @@ public class GameStatus : MonoBehaviour {
 
     public void DestroyGameObject() {
         Destroy(gameObject);
+    }
+
+    public bool IsAutoplayEnabled() {
+        return autoPlayEnabled;
     }
 }

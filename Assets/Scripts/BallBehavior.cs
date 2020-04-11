@@ -30,9 +30,13 @@ public class BallBehavior : MonoBehaviour {
 
     private void LaunchBallOnClick() {
         if (Input.GetMouseButtonDown(0)) {
-            ballLaunched = true;
-            ballRigidbody2D.velocity = new Vector2(launchBallX, launchBallY);
+            LaunchBall();
         }
+    }
+
+    public void LaunchBall() {
+        ballLaunched = true;
+        ballRigidbody2D.velocity = new Vector2(launchBallX, launchBallY);
     }
 
     private void LockBallToPaddle() {
@@ -48,12 +52,5 @@ public class BallBehavior : MonoBehaviour {
             myAudioSource.PlayOneShot(clip);
             ballRigidbody2D.velocity += velocityTweak;
         }
-        /**
-        AudioSource audio = GetComponent<AudioSource>();
-
-        if (audio != null & ballLaunched) {
-            audio.Play();
-        }
-        **/
     }
 }
